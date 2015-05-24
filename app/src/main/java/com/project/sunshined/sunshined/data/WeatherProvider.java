@@ -332,6 +332,7 @@ public class WeatherProvider extends ContentProvider {
 
     }
 
+    // Efficient Updates / Inserts
     @Override
     public int bulkInsert(Uri uri, ContentValues[] values) {
         final SQLiteDatabase db = mOpenHelper.getWritableDatabase();
